@@ -1,0 +1,12 @@
+
+amazona-app ------github name of repository
+
+
+---------------------------------------------
+        git commands:
+
+git commit -m "first commit"
+
+got push -u base master
+
+git push base HEAD:master
