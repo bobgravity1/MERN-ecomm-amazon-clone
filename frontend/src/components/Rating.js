@@ -3,8 +3,8 @@ import React from 'react';
 const Rating=(props) =>{
   const { rating, numReviews } = props;
   return (
-    <div >
-      <span className="rating">
+    <div className="rating">
+      <span>
         <i
           className={
             rating >= 1
@@ -59,8 +59,9 @@ const Rating=(props) =>{
           }
         ></i>
       </span>
-
+    (
         <span>{numReviews + ' reviews'}</span>
+      )}
     </div>
   );
 }
