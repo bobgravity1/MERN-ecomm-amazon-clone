@@ -5,10 +5,10 @@ const data={
       name:'nike slim shirt',
       category:'shirts',
       image:'/images/product-4.jpg',
-      price:42,
+      price:120,
       brand:'nike',
       countInStock:20,
-      rating:5,
+      rating:4.5,
       numReviews:10,
       description:'high quality product'
     },

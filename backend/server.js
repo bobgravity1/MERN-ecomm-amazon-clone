@@ -8,11 +8,10 @@ app.get('/', (req, res)=>{
 })
 
 app.get('/api/products', (req, res)=>{
-  const dataz=JSON.stringify(data.products)
-  res.send(dataz)
+  res.send(data.products)
 })
 
-const port=process.env.PORT||5000
+const port=process.env.PORT||3000
 app.listen(port, ()=>{
   console.log(`serve at https://localhost:${port}`)
 })

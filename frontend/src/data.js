@@ -44,7 +44,7 @@ const data={
       image:'/images/product-4.jpg',
       price:120,
       brand:'gucci',
-      rating:4.5,
+      rating:3.5,
       numReviews:10,
       description:'high quality product'
     },
@@ -56,7 +56,7 @@ const data={
       price:100,
       brand:'adidas',
       countInStock:8,
-      rating:4.0,
+      rating:.0,
       numReviews:10,
       description:'high quality product'
     }
