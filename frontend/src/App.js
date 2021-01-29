@@ -22,7 +22,7 @@ function App() {
       <Route path="/product/:id" component={Productscreen} exact></Route>
       <Route path='/' component={Homescreen} exact />
         <div>
-</div>
+    </div>
       </main>
       <footer className="row center">All right reserved</footer>
     </div>
