@@ -19,7 +19,7 @@ function App() {
         </div>
       </header>
       <main>
-      <Route path="/product/:id" component={Productscreen} exact></Route>
+      <Route path="/api/products/:id" component={Productscreen} exact></Route>
       <Route path='/' component={Homescreen} exact />
         <div>
     </div>

@@ -1,19 +1,26 @@
-import React from "react";
-import data from "../data";
+import React, {useEffect} from "react";
 import Rating from "../components/Rating.js";
 import {Link} from 'react-router-dom'
+import {useSelector,useDispatch} from 'react-redux'
+import {detailsProduct} from '../actions/productActions'
 
 const Productscreen = (props) => {
-  const product = data.products.find((x) => x._id === props.match.params.id);
-  if (!product) {
-    return <div>product not found!</div>;
-  }
+
+const dispatch=useDispatch();
+const product=useSelector(state=>state.productDetails)
+console.log(product)
+const productId=props.match.params.id
+useEffect(()=>{
+  dispatch(detailsProduct(productId))
+},[productId, dispatch])
+
+
   return (
     <div>
     <Link to='/'>Back to results</Link>
       <div className="row top">
         <div className="col-2">
-          <img className="large" src={product.image} alt={product.name} />
+          <img className="large" src={product.image} alt={product.brand} />
         </div>
         <div className="col-1">
         <ul>
